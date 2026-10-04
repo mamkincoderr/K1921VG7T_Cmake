@@ -1,0 +1,15 @@
+# Начальный скрипт GDB для К1921ВГ7Т (используется командой tools\run.ps1 debug)
+# Автор: Дмитрий (GitHub: mamkincoderr), Telegram: https://t.me/oDeXteRo
+set pagination off
+set confirm off
+set remotetimeout 20
+target extended-remote :3333
+monitor reset_config none
+monitor halt
+# остановить прерывания приложения и переключить тактирование на HSI (openocd/k1921_tools.cfg)
+monitor k1921_prepare
+load
+# запуск с вектора старта приложения; программный сброс RSTSYS не используется
+set $pc = _start
+thbreak main
+continue

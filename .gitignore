@@ -1,0 +1,15 @@
+# build output
+build/
+obj/
+# downloaded tools (tools\fetch.ps1 restores them)
+tools/gcc/
+tools/openocd/
+tools/fetch_gcc.log
+__pycache__/
+*.pyc
+
+# служебные файлы MounRiver Studio
+.mrs/
+.template
+.template/
+*.wvproj

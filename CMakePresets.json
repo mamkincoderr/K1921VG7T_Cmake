@@ -1,0 +1,17 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 20, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "К1921ВГ7Т: GCC НИИЭТ, Ninja",
+      "generator": "Ninja",
+      "toolchainFile": "${sourceDir}/cmake/niiet-gcc.cmake",
+      "binaryDir": "${sourceDir}/obj",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "default", "configurePreset": "default" }
+  ]
+}

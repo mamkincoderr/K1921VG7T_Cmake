@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="460" viewBox="0 0 920 460">
+  <rect width="920" height="460" fill="#f7f4ee"/>
+  <text x="36" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1d1a16">Программатор WCH-LinkE и разъём XP7</text>
+  <text x="36" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">Плата питается от своего USB-C. 3,3 В программатора на XP7 не подавать.</text>
+
+  <rect x="36" y="96" width="250" height="320" rx="12" fill="#1f3b57"/>
+  <text x="56" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f7f4ee">WCH-LinkE</text>
+  <text x="56" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c9d7e6">режим CMSIS-DAP</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#f7f4ee">
+    <text x="56" y="196">SWDIO / TMS</text>
+    <text x="56" y="236">SWCLK / TCK</text>
+    <text x="56" y="276">TDO</text>
+    <text x="56" y="316">TDI</text>
+    <text x="56" y="356">GND</text>
+    <text x="56" y="396">RST</text>
+  </g>
+
+  <g stroke="#1d1a16" stroke-width="2" fill="none">
+    <path d="M250 190 H390"/>
+    <path d="M250 230 H390"/>
+    <path d="M250 270 H390"/>
+    <path d="M250 310 H390"/>
+    <path d="M250 350 H390"/>
+    <path d="M250 390 H390"/>
+  </g>
+
+  <rect x="390" y="96" width="490" height="320" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+  <text x="414" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d1a16">Разъём XP7 на плате, подпись JTAG</text>
+  <g font-family="Consolas, Courier New, monospace" font-size="15" fill="#1d1a16">
+    <text x="414" y="196">контакт 2    TMS     вывод МК A12</text>
+    <text x="414" y="236">контакт 4    TCK     вывод МК A13</text>
+    <text x="414" y="276">контакт 6    TDO     вывод МК A15</text>
+    <text x="414" y="316">контакт 8    TDI     вывод МК A14</text>
+    <text x="414" y="356">контакт 3    GND     земля платы</text>
+    <text x="414" y="396">контакт 10   TRST    вывод МК A10</text>
+  </g>
+  <text x="414" y="168" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5c564e">Землю можно взять и с контакта 5 или 9. Контакт 10 необязателен.</text>
+</svg>

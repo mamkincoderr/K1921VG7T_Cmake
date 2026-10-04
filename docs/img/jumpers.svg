@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="340" viewBox="0 0 920 340">
+  <rect width="920" height="340" fill="#f7f4ee"/>
+  <text x="36" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1d1a16">Перемычки для обычной работы</text>
+  <text x="36" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">Имена написаны на плате рядом с разъёмами. Слева от USB-C стоят BT.RST и BT.EN, справа SERVEN.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="36" y="100" width="270" height="190" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+    <text x="56" y="136" font-size="18" fill="#1d1a16">XP3  BT.EN</text>
+    <text x="56" y="168" font-size="15" fill="#1d1a16">Перемычка стоит</text>
+    <text x="56" y="196" font-size="14" fill="#5c564e">RTS адаптера CH340</text>
+    <text x="56" y="216" font-size="14" fill="#5c564e">соединён с выводом A6.</text>
+    <text x="56" y="248" font-size="14" fill="#5c564e">Так UART-загрузчик</text>
+    <text x="56" y="268" font-size="14" fill="#5c564e">понимает, что его зовут.</text>
+
+    <rect x="324" y="100" width="270" height="190" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+    <text x="344" y="136" font-size="18" fill="#1d1a16">XP4  BT.RST</text>
+    <text x="344" y="168" font-size="15" fill="#1d1a16">Перемычка стоит</text>
+    <text x="344" y="196" font-size="14" fill="#5c564e">DTR адаптера CH340</text>
+    <text x="344" y="216" font-size="14" fill="#5c564e">сбрасывает микроконтроллер.</text>
+    <text x="344" y="248" font-size="14" fill="#8a3b12">В терминале DTR выключить.</text>
+    <text x="344" y="268" font-size="14" fill="#8a3b12">Иначе плата молчит.</text>
+
+    <rect x="612" y="100" width="270" height="190" rx="12" fill="#fff6f2" stroke="#8a3b12"/>
+    <text x="632" y="136" font-size="18" fill="#1d1a16">XP8  SERVEN</text>
+    <text x="632" y="168" font-size="15" fill="#8a3b12">Перемычка снята</text>
+    <text x="632" y="196" font-size="14" fill="#5c564e">Замкнутая включает</text>
+    <text x="632" y="216" font-size="14" fill="#5c564e">сервисный режим.</text>
+    <text x="632" y="248" font-size="14" fill="#5c564e">Для учёбы и прошивки</text>
+    <text x="632" y="268" font-size="14" fill="#5c564e">она не нужна.</text>
+  </g>
+</svg>
