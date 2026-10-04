@@ -2,6 +2,9 @@
  * Автор: Дмитрий (GitHub: mamkincoderr, https://github.com/mamkincoderr)
  * Telegram: https://t.me/oDeXteRo
  *
+ * Перед сборкой распакуйте pack\k1921vg7t-tools.7z в папку tools.
+ * Должны появиться tools\gcc и tools\openocd. Без них сборка не запустится.
+ *
  * Тексты на UART латиницей. Кнопка B1 в цикле мигания печатает календарь.
  */
 #include <stdio.h>

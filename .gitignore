@@ -1,7 +1,7 @@
 # build output
 build/
 obj/
-# downloaded tools (tools\fetch.ps1 restores them)
+# Распакованный тулчейн. В репозитории он лежит архивом pack/k1921vg7t-tools.7z*
 tools/gcc/
 tools/openocd/
 tools/fetch_gcc.log
