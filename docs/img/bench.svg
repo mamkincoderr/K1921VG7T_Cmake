@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <rect width="920" height="420" fill="#f7f4ee"/>
+  <text x="36" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1d1a16">Стенд целиком</text>
+  <text x="36" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">Два кабеля в компьютер. Отдельный переходник USB-UART не нужен: он уже на плате.</text>
+
+  <rect x="36" y="100" width="220" height="250" rx="12" fill="#1f3b57"/>
+  <text x="56" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#f7f4ee">Компьютер</text>
+  <text x="56" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#c9d7e6">порт CH340</text>
+  <text x="56" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#c9d7e6">115200 8N1</text>
+  <text x="56" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#f0c7a8">DTR и RTS выкл.</text>
+  <text x="56" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#c9d7e6">второй USB</text>
+  <text x="56" y="290" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#c9d7e6">для программатора</text>
+
+  <rect x="360" y="108" width="230" height="110" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+  <text x="380" y="146" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d1a16">Кабель USB-C</text>
+  <text x="380" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">питание платы</text>
+  <text x="380" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">и текст в терминал</text>
+
+  <rect x="360" y="248" width="230" height="110" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+  <text x="380" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d1a16">WCH-LinkE</text>
+  <text x="380" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">режим CMSIS-DAP</text>
+  <text x="380" y="336" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">синий светодиод горит</text>
+
+  <rect x="680" y="100" width="204" height="250" rx="12" fill="#234e52"/>
+  <text x="700" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#f7f4ee">Плата</text>
+  <text x="700" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">XS1, разъём USB-C</text>
+  <text x="700" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">светодиод PWR</text>
+  <text x="700" y="246" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">XP7, подпись JTAG</text>
+  <text x="700" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">шлейф программатора</text>
+  <text x="700" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#f0c7a8">SERVEN снята</text>
+
+  <g stroke="#1d1a16" stroke-width="2" fill="none">
+    <path d="M256 170 H360"/>
+    <path d="M590 163 H680"/>
+    <path d="M256 290 H360"/>
+    <path d="M590 303 H680"/>
+  </g>
+</svg>

@@ -21,6 +21,8 @@ Telegram: <https://t.me/oDeXteRo>
 В XP7 нет nRESET. Аппаратный сброс потребовал бы провода к EXT.RST# (XP5-25), проект его не
 использует.
 
+Схема стенда и путь UART нарисованы в [README](../README.md): `docs/img/bench.svg` и `docs/img/uart.svg`.
+
 ## UART-загрузчик: USB-C -> CH340B
 
 | Функция | Вывод | Примечание |

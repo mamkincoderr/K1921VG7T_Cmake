@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="280" viewBox="0 0 920 280">
+  <rect width="920" height="280" fill="#f7f4ee"/>
+  <text x="36" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#1d1a16">Откуда на плате берётся UART</text>
+  <text x="36" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">Кабель USB-C приходит на микросхему CH340. Она уже соединена с UART0 микроконтроллера.</text>
+
+  <rect x="36" y="100" width="180" height="120" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+  <text x="56" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d1a16">XS1</text>
+  <text x="56" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">разъём USB-C</text>
+
+  <rect x="280" y="100" width="200" height="120" rx="12" fill="#ffffff" stroke="#1d1a16"/>
+  <text x="300" y="146" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d1a16">CH340</text>
+  <text x="300" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">TX уходит на A8</text>
+  <text x="300" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">RX приходит с A9</text>
+
+  <rect x="560" y="100" width="324" height="120" rx="12" fill="#234e52"/>
+  <text x="580" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#f7f4ee">К1921ВГ7Т, UART0</text>
+  <text x="580" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">A8 приём, функция 1</text>
+  <text x="580" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#d5ecec">A9 передача, функция 1</text>
+
+  <g stroke="#1d1a16" stroke-width="2" fill="none">
+    <path d="M216 160 H280"/>
+    <path d="M480 160 H560"/>
+  </g>
+
+  <text x="36" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c564e">XP3 соединяет RTS этой микросхемы с A6. XP4 соединяет DTR со сбросом микроконтроллера.</text>
+</svg>
