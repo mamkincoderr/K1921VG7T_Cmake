@@ -20,7 +20,7 @@
 
   File → Import → General → Existing Projects into Workspace. Каталог — корень этого репозитория, проект `K1921VG7T_Cmake`.
 
-  Молоток вызывает `build.bat`. Без аргументов это сборка (`all`). Остальные цели: `flash`, `boot-flash`, `uart`, `clean`. Отладка: Run → Debug Configurations → **K1921VG7T_Cmake**, ELF `obj\K1921VG7T_Cmake.elf`. Описание регистров: `svd\K1921VG7T.svd`.
+  Молоток на панели делает то же, что двойной щелчок по цели `all`. Сборка, запись и отладка — на снимках ниже. Регистры периферии Studio берёт из `svd\K1921VG7T.svd`.
 
   Компилятор Studio для этой платы не используется. Сборка берёт GCC НИИЭТ 12.2.1 из архива ниже.
   </details>
@@ -90,29 +90,41 @@
   Python из `tools\gcc` не подходит: в нём нет pyserial. На время записи порт COM должен быть свободен.
   </details>
 
-## Собрать
+## Куда нажимать
 
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\run.ps1 build
-```
+В Project Explorer откройте **Build Targets** и щёлкните цель дважды.
 
-В Studio то же делает молоток (Ctrl+B). Новый файл `.c` в папке `user\` подхватывается сам. В конце сборки печатается карта Flash.
+![Сборка и прошивка в MounRiver Studio](docs/img/mrs-targets.png)
+
+**all** собирает проект. Внизу, во вкладке Console, должна появиться строка `Build Finished. 0 errors`. Новый файл `.c` в папке `user\` подхватывается сам.
+
+**boot-flash** записывает загрузчик. Один раз, и ещё раз только после полного стирания Flash. Полное стирание само по себе не запускать.
+
+**flash** записывает программу и пускает кристалл. **uart** в том же списке пишет программу через USB, без программатора. Порт COM на это время должен быть свободен.
 
 | Файл | Куда пишется |
 |---|---|
 | `obj\bootloader\bootloader.elf` | `0x0000`–`0x1FFF`, 8 КБ |
 | `obj\K1921VG7T_Cmake.elf` | с адреса `0x2000` |
 
-## Прошить
-
-Загрузчик пишется один раз и ещё раз после полного стирания Flash. Приложение пишется отдельно. Полное стирание само по себе не запускать.
+<details>
+<summary>То же из PowerShell</summary>
 
 ```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\run.ps1 build
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\run.ps1 boot-flash
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\run.ps1 flash
 ```
 
-`flash` сверяет запись и пускает кристалл. В Studio те же цели: `boot-flash` и `flash`. Запись только по USB, без программатора: цель `uart`.
+Команды из корня проекта. Цель `uart` пишет программу через USB.
+
+</details>
+
+## Отладка
+
+Кнопка с жуком на панели запускает конфигурацию **K1921VG7T_Cmake** и останавливает программу на `main`. Вкладка **Peripherals** показывает регистры блоков по файлу `svd\K1921VG7T.svd`: GPIO, UART, ADC, RTC и остальные.
+
+![Отладка: вкладка Peripherals](docs/img/mrs-debug.png)
 
 <details>
 <summary>Плата и подключение</summary>
